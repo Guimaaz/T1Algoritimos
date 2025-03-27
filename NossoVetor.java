@@ -1,3 +1,5 @@
+import java.util.Random;
+
 public class NossoVetor<T> {
   private Object[] vetor;
   private int tamanho = 0;
@@ -44,7 +46,6 @@ public class NossoVetor<T> {
       this.vetor[this.tamanho - 1] = null; 
       this.tamanho--;
   }
-
   
   @SuppressWarnings("unchecked")
   private void aumentarCapacidade() {
@@ -68,4 +69,15 @@ public String toString(){
 
   return s.toString();
 }
+
+public void preencheVetor() {
+    Random random = new Random();
+    for (int i = 0; i < this.vetor.length; i++) {
+        this.vetor[i] = random.nextInt(vetor.length * 10);
+    }
+tamanho = this.vetor.length;
+
 }
+
+}
+

@@ -5,6 +5,8 @@ public class Teste1 {
         int tamanho = Integer.parseInt(JOptionPane.showInputDialog("Qual o tamanho do vetor?"));
         NossoVetor<Integer> vetor = new NossoVetor<>(tamanho);
 
+        vetor.preencheVetor();
+
         int opcao;
         do {
             opcao = Integer.parseInt(JOptionPane.showInputDialog(
@@ -22,6 +24,7 @@ public class Teste1 {
                     break;
                 case 3:
                     System.out.println(vetor.toString());
+                    break;
                 case 0:
                     JOptionPane.showMessageDialog(null, "Saindo...");
                     break;
