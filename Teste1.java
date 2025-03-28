@@ -3,14 +3,14 @@ import javax.swing.JOptionPane;
 public class Teste1 {
     public static void main(String[] args) {
         int tamanho = Integer.parseInt(JOptionPane.showInputDialog("Qual o tamanho do vetor?"));
-        NossoVetor<Integer> vetor = new NossoVetor<>(tamanho);
+        NossoVetor vetor = new NossoVetor(tamanho);
 
         vetor.preencheVetor();
 
         int opcao;
         do {
             opcao = Integer.parseInt(JOptionPane.showInputDialog(
-                    "Escolha uma opção:\n1 - Inserir\n2 - Remover\n3 - Exibir\n0 - Sair"));
+                    "Escolha uma opção:\n1 - Inserir\n2 - Remover\n3 - Exibir\n4 - Ordenação\n 0 - Sair"));
 
             switch (opcao) {
                 case 1:
@@ -24,6 +24,9 @@ public class Teste1 {
                     break;
                 case 3:
                     System.out.println(vetor.toString());
+                    break;
+                case 4 :
+                     vetor.BubbleSort();
                     break;
                 case 0:
                     JOptionPane.showMessageDialog(null, "Saindo...");

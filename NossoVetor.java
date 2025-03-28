@@ -1,14 +1,14 @@
 import java.util.Random;
 
-public class NossoVetor<T> {
-  private Object[] vetor;
+public class NossoVetor {
+  private int [] vetor;
   private int tamanho = 0;
 
   public NossoVetor(int capacidade) {
-      this.vetor = new Object[capacidade];
+      this.vetor = new int[capacidade];
   }
 
-  public void adicionar(int posicao, T elemento) {
+  public void adicionar(int posicao, int elemento) {
       if (!(posicao >= 0 && posicao <= this.tamanho)) {
           System.out.println("Posição inválida");
           return;
@@ -24,9 +24,9 @@ public class NossoVetor<T> {
       this.tamanho++;
   }
 
-  public int getPosicaoDoElemento(T elemento) {
+  public int getPosicaoDoElemento(int elemento) {
       for (int i = 0; i < this.tamanho; i++) {
-          if (this.vetor[i].equals(elemento)) { 
+          if (this.vetor[i] == elemento ) { 
               return i;
           }
       }
@@ -42,15 +42,14 @@ public class NossoVetor<T> {
       for (int i = posicao; i < this.tamanho - 1; i++) {
           this.vetor[i] = this.vetor[i + 1]; 
       }
-
-      this.vetor[this.tamanho - 1] = null; 
+ 
       this.tamanho--;
   }
   
-  @SuppressWarnings("unchecked")
+ 
   private void aumentarCapacidade() {
       if (this.tamanho == this.vetor.length) {
-          Object[] vetorAumentado =(T[]) new Object[this.vetor.length * 2];
+          int [] vetorAumentado = new int[this.vetor.length * 2];
           for (int i = 0; i < this.vetor.length; i++) {
               vetorAumentado[i] = this.vetor[i];
           }
@@ -77,6 +76,30 @@ public void preencheVetor() {
     }
 tamanho = this.vetor.length;
 
+}
+
+public void BubbleSort() {
+    long contadorOperacoes = 0; 
+    long tempoInicio = System.nanoTime(); 
+
+    for (int i = 0; i < this.tamanho - 1; i++) {
+        for (int j = 0; j < this.tamanho - 1 - i; j++) {
+            if (this.vetor[j] > this.vetor[j + 1]) {
+                int temp = this.vetor[j];
+                this.vetor[j] = this.vetor[j + 1];
+                this.vetor[j + 1] = temp;
+                contadorOperacoes++; 
+            }
+        }
+    }
+
+    long tempoFim = System.nanoTime(); 
+    long tempoExecucao = tempoFim - tempoInicio;
+
+    System.out.println("Vetor ordenado: " + this.toString());
+
+    System.out.println("Número de operações realizadas: " + contadorOperacoes);
+    System.out.println("Tempo de execução: " + (tempoExecucao / 1000000000) + " segundos");
 }
 
 }
