@@ -1,151 +1,148 @@
 import java.util.Random;
 
 public class NossoVetor {
-    private int [] vetor;
-    private int tamanho = 0;
+  private int ocupacao;
+  private int[] vetor;
 
-public NossoVetor(int capacidade) {
-    this.vetor = new int[capacidade];
-}
+  public NossoVetor(int tamanho) {
+    vetor = new int[tamanho];
+    ocupacao = 0;
+  }
 
-public void adicionar(int posicao, int elemento) {
-    if (!(posicao >= 0 && posicao <= this.tamanho)) {
-        System.out.println("Posição inválida");
-        return;
+  public NossoVetor() {
+    this(10);
+  }
+
+  public void inserir(int i) {
+    if (estaCheio())
+      redimensiona(vetor.length * 2);
+    vetor[ocupacao++] = i;
+  }
+
+  public int getTamanho() {
+    return vetor.length;
+  }
+  // public int remover() {
+  // if (!estaVazio()) {
+  // int aux = vetor[--ocupacao];
+  // if (vetor.length >= 6 && ocupacao <= vetor.length / 4)
+  // redimensiona(vetor.length / 2);
+  // return aux;
+  // }
+  // else
+  // return -1;
+  // }
+
+  public int remover() {
+    if (estaVazio())
+      throw new VetorVazioException("vetor vazio, nao ha o que remover");
+    int aux = vetor[--ocupacao];
+    if (vetor.length >= 6 && ocupacao <= vetor.length / 4)
+      redimensiona(vetor.length / 2);
+    return aux;
+  }
+
+  public boolean estaCheio() {
+    return ocupacao == vetor.length;
+  }
+
+  public boolean estaVazio() {
+    return ocupacao == 0;
+  }
+
+  // private void dobraVetor () {
+  // int[] temp = new int[vetor.length*2]; //temporário alocado com o dobro do
+  // tamanho
+  // for (int i=0; i < ocupacao; i++) { //copiando elementos do vetor para o
+  // temporário
+  // temp[i] = vetor[i];
+  // }
+  // vetor = temp; //a variável de referência vetor "aponta" para a região
+  // "temporária"
+  // }
+  // private void reduzVetor() {
+  // int[] temp = new int[vetor.length/2];
+  // for (int i=0; i< ocupacao; i++) {
+  // temp[i] = vetor[i];
+  // }
+  // vetor = temp;
+  // }
+  private void redimensiona(int novoTamanho) {
+    int[] temp = new int[novoTamanho];
+    for (int i = 0; i < ocupacao; i++) {
+      temp[i] = vetor[i];
     }
+    vetor = temp;
+  }
 
-    aumentarCapacidade();
-
-    for (int i = this.tamanho - 1; i >= posicao; i--) {
-        this.vetor[i + 1] = this.vetor[i];
+  @Override
+  public String toString() {
+    String s = "ocupacao = " + ocupacao + "\n";
+    for (int i = 0; i < ocupacao; i++) {
+      s += vetor[i] + " ";
     }
+    return s + "\n";
+  }
 
-    this.vetor[posicao] = elemento;
-    this.tamanho++;
-}
+  public boolean contem(int i) {
+    for (int j = 0; j < ocupacao; j++)
+      if (vetor[j] == i)
+        return true;
+    return false;
+  }
 
-public int getPosicaoDoElemento(int elemento) {
-    for (int i = 0; i < this.tamanho; i++) {
-        if (this.vetor[i] == elemento ) { 
-            return i;
-        }
-    }
+  public int indiceDe(int i) {
+    for (int j = 0; j < ocupacao; j++)
+      if (vetor[j] == i)
+        return j;
     return -1;
-}
+  }
 
-public void removerPosicao(int posicao) {
-    if (!(posicao >= 0 && posicao <= this.tamanho)) { 
-        System.out.println("Posição inválida");
-        return;
-    }
-
-    for (int i = posicao; i < this.tamanho - 1; i++) {
-        this.vetor[i] = this.vetor[i + 1]; 
-    }
- 
-    this.tamanho--;
-}
-  
-private void aumentarCapacidade() {
-    if (this.tamanho == this.vetor.length) {
-        int [] vetorAumentado = new int[this.vetor.length * 2];
-        for (int i = 0; i < this.vetor.length; i++) {
-            vetorAumentado[i] = this.vetor[i];
-        }
-        this.vetor = vetorAumentado;
-    }
-}
-
-public String toString(){
-    StringBuilder s = new StringBuilder();
-    s.append("[");
-    for( int i = 0; i < this.tamanho; i++){
-        s.append(this.vetor[i]);
-        s.append(",");
-
-    }
-    s.append("]");
-
-  return s.toString();
-}
-
-public void preencheVetor() {
+  public void preecheVetor() {
     Random random = new Random();
-    for (int i = 0; i < this.vetor.length; i++) {
-        this.vetor[i] = random.nextInt(vetor.length * 10);
+    for (int i = 0; i < vetor.length; i++) {
+      vetor[i] = random.nextInt(vetor.length * 10);
     }
-tamanho = this.vetor.length;
-}
+    ocupacao = vetor.length;
+  }
 
-public void BubbleSort() {
-    long contadorOperacoes = 0; 
-    long tempoInicio = System.nanoTime(); 
-
-    for (int i = 0; i < this.tamanho - 1; i++) {
-        for (int j = 0; j < this.tamanho - 1 - i; j++) {
-            if (this.vetor[j] > this.vetor[j + 1]) {
-                int temp = this.vetor[j];
-                this.vetor[j] = this.vetor[j + 1];
-                this.vetor[j + 1] = temp;
-                contadorOperacoes++; 
-            }
+  public void bubbleSort() {
+    for (int i = 1; i < vetor.length; i++) {
+      for (int j = 0; j < vetor.length - i; j++) {
+        if (vetor[j] > vetor[j + 1]) {
+          int aux = vetor[j];
+          vetor[j] = vetor[j + 1];
+          vetor[j + 1] = aux;
         }
-    }
-
-    long tempoFim = System.nanoTime(); 
-    long tempoExecucao = tempoFim - tempoInicio;
-
-    System.out.println("Vetor ordenado: " + this.toString());
-
-    System.out.println("Número de operações realizadas: " + contadorOperacoes);
-    System.out.println("Tempo de execução: " + (tempoExecucao / 1000000000) + " segundos");
-}
-
-public void selectionsort() {
-    long contadorOperacoes = 0; 
-    long tempoInicio = System.nanoTime();
-
-    for (int i = 0; i < vetor.length - 1; ++i) {
-        int min = i;
-        for (int j = i + 1; j < vetor.length; ++j)
-            if (vetor[j] < vetor[min])
-                min = j;
-            int x = vetor[i];
-            vetor[i] = vetor[min];
-            vetor[min] = x;
-            contadorOperacoes++; 
-        }
-
-        long tempoFim = System.nanoTime(); 
-        long tempoExecucao = tempoFim - tempoInicio;
-    
-        System.out.println("Vetor ordenado: " + this.toString());
-    
-        System.out.println("Número de operações realizadas: " + contadorOperacoes);
-        System.out.println("Tempo de execução: " + (tempoExecucao / 1000000000) + " segundos");
-
-    }
-
-    public void insertionSort() {
-        long contadorOperacoes = 0; 
-        long tempoInicio = System.nanoTime();
-
-        for (int j = 1; j < vetor.length; ++j) {
-          int x = vetor[j];
-          int i;
-          for (i = j - 1; i >= 0 && vetor[i] > x; --i)
-            vetor[i + 1] = vetor[i];
-          vetor[i + 1] = x;
-          contadorOperacoes++; 
-        }
-
-        long tempoFim = System.nanoTime(); 
-        long tempoExecucao = tempoFim - tempoInicio;
-    
-        System.out.println("Vetor ordenado: " + this.toString());
-    
-        System.out.println("Número de operações realizadas: " + contadorOperacoes);
-        System.out.println("Tempo de execução: " + (tempoExecucao / 1000000000) + " segundos");
-
       }
     }
+  }
+
+  public void selectionSort() {
+    for (int i = 0; i < vetor.length - 1; ++i) {
+      int min = i;
+      for (int j = i + 1; j < vetor.length; ++j)
+        if (vetor[j] < vetor[min])
+          min = j;
+      int x = vetor[i];
+      vetor[i] = vetor[min];
+      vetor[min] = x;
+    }
+  }
+
+  public void insertionSort() {
+    for (int j = 1; j < vetor.length; ++j) {
+      int x = vetor[j];
+      int i;
+      for (i = j - 1; i >= 0 && vetor[i] > x; --i)
+        vetor[i + 1] = vetor[i];
+      vetor[i + 1] = x;
+    }
+  }
+}
+
+class VetorVazioException extends RuntimeException {
+  public VetorVazioException(String msg) {
+    super(msg);
+  }
+}
