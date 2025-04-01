@@ -1,148 +1,123 @@
 import java.util.Random;
 
 public class NossoVetor {
-  private int ocupacao;
-  private int[] vetor;
 
-  public NossoVetor(int tamanho) {
-    vetor = new int[tamanho];
-    ocupacao = 0;
-  }
+    private int[] vetor;
+    private int ocupacao;
 
-  public NossoVetor() {
-    this(10);
-  }
-
-  public void inserir(int i) {
-    if (estaCheio())
-      redimensiona(vetor.length * 2);
-    vetor[ocupacao++] = i;
-  }
-
-  public int getTamanho() {
-    return vetor.length;
-  }
-  // public int remover() {
-  // if (!estaVazio()) {
-  // int aux = vetor[--ocupacao];
-  // if (vetor.length >= 6 && ocupacao <= vetor.length / 4)
-  // redimensiona(vetor.length / 2);
-  // return aux;
-  // }
-  // else
-  // return -1;
-  // }
-
-  public int remover() {
-    if (estaVazio())
-      throw new VetorVazioException("vetor vazio, nao ha o que remover");
-    int aux = vetor[--ocupacao];
-    if (vetor.length >= 6 && ocupacao <= vetor.length / 4)
-      redimensiona(vetor.length / 2);
-    return aux;
-  }
-
-  public boolean estaCheio() {
-    return ocupacao == vetor.length;
-  }
-
-  public boolean estaVazio() {
-    return ocupacao == 0;
-  }
-
-  // private void dobraVetor () {
-  // int[] temp = new int[vetor.length*2]; //temporário alocado com o dobro do
-  // tamanho
-  // for (int i=0; i < ocupacao; i++) { //copiando elementos do vetor para o
-  // temporário
-  // temp[i] = vetor[i];
-  // }
-  // vetor = temp; //a variável de referência vetor "aponta" para a região
-  // "temporária"
-  // }
-  // private void reduzVetor() {
-  // int[] temp = new int[vetor.length/2];
-  // for (int i=0; i< ocupacao; i++) {
-  // temp[i] = vetor[i];
-  // }
-  // vetor = temp;
-  // }
-  private void redimensiona(int novoTamanho) {
-    int[] temp = new int[novoTamanho];
-    for (int i = 0; i < ocupacao; i++) {
-      temp[i] = vetor[i];
+    public NossoVetor(int tamanho) {
+        vetor = new int[tamanho];
+        ocupacao = 0;
     }
-    vetor = temp;
-  }
 
-  @Override
-  public String toString() {
-    String s = "ocupacao = " + ocupacao + "\n";
-    for (int i = 0; i < ocupacao; i++) {
-      s += vetor[i] + " ";
+    public boolean estaVazio() {
+        return ocupacao == 0;
     }
-    return s + "\n";
-  }
 
-  public boolean contem(int i) {
-    for (int j = 0; j < ocupacao; j++)
-      if (vetor[j] == i)
-        return true;
-    return false;
-  }
+    public void preencheVetor() {
+        Random random = new Random();
+        for (int i = 0; i < vetor.length; i++) {
+            vetor[i] = random.nextInt(vetor.length * 1);
 
-  public int indiceDe(int i) {
-    for (int j = 0; j < ocupacao; j++)
-      if (vetor[j] == i)
-        return j;
-    return -1;
-  }
-
-  public void preecheVetor() {
-    Random random = new Random();
-    for (int i = 0; i < vetor.length; i++) {
-      vetor[i] = random.nextInt(vetor.length * 10);
-    }
-    ocupacao = vetor.length;
-  }
-
-  public void bubbleSort() {
-    for (int i = 1; i < vetor.length; i++) {
-      for (int j = 0; j < vetor.length - i; j++) {
-        if (vetor[j] > vetor[j + 1]) {
-          int aux = vetor[j];
-          vetor[j] = vetor[j + 1];
-          vetor[j + 1] = aux;
         }
-      }
+        ocupacao = vetor.length;
     }
-  }
 
-  public void selectionSort() {
-    for (int i = 0; i < vetor.length - 1; ++i) {
-      int min = i;
-      for (int j = i + 1; j < vetor.length; ++j)
-        if (vetor[j] < vetor[min])
-          min = j;
-      int x = vetor[i];
-      vetor[i] = vetor[min];
-      vetor[min] = x;
+    public String bubbleSort() {
+        long contadorTrocaBS = 0; // contador de trocas do BubbleSort
+        long contadorComparacaoBS = 0; // contador de comparações do BubbleSort
+        for (int i = 1; i < vetor.length; i++) {
+            for (int j = 0; j < vetor.length - i; j++) {
+                if (vetor[j] > vetor[j + 1]) {
+                    int aux = vetor[j];
+                    vetor[j] = vetor[j + 1];
+                    vetor[j + 1] = aux;
+
+                    contadorTrocaBS += 3;   
+                }
+                contadorComparacaoBS++;
+            }
+        }
+        return "contador de trocas do bubbleSort: " + contadorTrocaBS + " || contador de comparação do bubbleSort: " + contadorComparacaoBS;
     }
-  }
 
-  public void insertionSort() {
-    for (int j = 1; j < vetor.length; ++j) {
-      int x = vetor[j];
-      int i;
-      for (i = j - 1; i >= 0 && vetor[i] > x; --i)
-        vetor[i + 1] = vetor[i];
-      vetor[i + 1] = x;
+    // {3, 9, 4, 1, 2, 6, 5, 8, 10, 7}
+    public String selectionSort() {
+        long contadorTrocaSS = 0, contadorComparacaoSS = 0;
+        for (int i = 0; i < vetor.length - 1; i++) {
+            int min = i;
+            for (int j = i + 1; j < vetor.length; j++) {
+                contadorComparacaoSS++;
+                if (vetor[min] > vetor[j]) {
+                    min = j;
+                    contadorTrocaSS++;
+                }
+            }
+            int temp = vetor[min];
+            vetor[min] = vetor[i];
+            vetor[i] = temp;
+            contadorTrocaSS += 3;
+        }
+        return "contador de trocas do SelectionSort: " + contadorTrocaSS + " || contador de comparação do SelectionSort: " + contadorComparacaoSS;
     }
-  }
-}
 
-class VetorVazioException extends RuntimeException {
-  public VetorVazioException(String msg) {
-    super(msg);
-  }
+    // {3, 4, 9, 1, 2, 6, 5, 8, 10, 7}
+    public String insertionSort() {
+        long contadorTrocaIS = 0, contadorComparacaoIS = 0;
+        for (int i = 1; i < vetor.length; i++) {
+            int temp = vetor[i];
+            int j = i - 1;
+            while (j >= 0 && vetor[j] > temp) {
+                vetor[j + 1] = vetor[j];
+                j--;
+                contadorTrocaIS++;
+                contadorComparacaoIS++;
+            }
+            vetor[j + 1] = temp;
+            contadorTrocaIS++;
+        }
+        return "contador de trocas do insertionSort: " + contadorTrocaIS + " || contador de comparação do insertionSort: " + contadorComparacaoIS;
+    }
+
+    public int buscaLinear(int elemento) {
+        int contadorLinear = 0; // Contador de comparações
+
+        for (int i = 0; i < vetor.length; i++) {
+            if (vetor[i] == elemento) {
+                // System.out.println(i); 
+
+                contadorLinear++; 
+            }
+        }
+        return contadorLinear;
+    }
+
+    public int buscaBinaria(int elemento) {
+        int contadorBinario = 0; // Contador de comparações
+
+        int inicio = 0;
+        int fim = vetor.length - 1;
+        while (inicio <= fim) {
+            int meio = (inicio + fim) / 2;
+            if (elemento == vetor[meio]) {
+                // contadorBinario++;      //   CORRIGIR O LOCAL ONDE É APLICADO O CONTADOR!!
+                return meio;
+            }
+            if (elemento > vetor[meio]) {
+                inicio = meio + 1;
+            } else {
+                fim = meio - 1;
+            }
+        }
+        return contadorBinario;
+    }
+
+    @Override
+    public String toString() {
+        String s = "ocupacao = " + ocupacao + "\n";
+        for (int i = 0; i < ocupacao; i++) {
+            s += vetor[i] + " ";
+        }
+        return s + "\n";
+    }
 }
