@@ -13,7 +13,7 @@ public class TesteVetor {
 
             vetor.adicionarpreencher();
             System.out.println(vetor.buscaLinear(numeroProcurado)); 
-            System.out.println(vetor.bubbleSort());
+            System.out.println(vetor.selectionSort());
             System.out.println(vetor.buscaBinaria(numeroProcurado) + "\n");
         }
     }
