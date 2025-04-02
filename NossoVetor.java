@@ -86,18 +86,18 @@ public class NossoVetor {
     }
 
     public int buscaBinaria(int elemento) {
-        int contadorBinario = 0; // Contador de comparações
+        int contadorBinario = 0;
 
         int inicio = 0;
         int fim = this.vetor.length - 1;
         while (inicio <= fim) {
             int meio = (inicio + fim) / 2;
             contadorBinario++;
-            if (elemento == this.vetor[meio]) {
+            if (this.vetor[meio]  == elemento ) {
                 return contadorBinario;
             }
             contadorBinario++;
-            if (elemento > this.vetor[meio]) {
+            if (this.vetor[meio] < elemento ) {
                 inicio = meio + 1;
             } else {
                 fim = meio - 1;
