@@ -1,4 +1,5 @@
 import javax.swing.JOptionPane;
+import java.util.Calendar;
 
 public class TesteVetor {
     public static void main(String[] args) {
@@ -12,9 +13,19 @@ public class TesteVetor {
             System.out.printf("Teste número %d\n", i + 1);
 
             vetor.adicionarpreencher();
+            long ini = Calendar.getInstance().getTimeInMillis();
             System.out.println(vetor.buscaLinear(numeroProcurado)); 
-            System.out.println(vetor.selectionSort());
+            System.out.println(vetor.bubbleSort());
+            long fim = Calendar.getInstance().getTimeInMillis();
             System.out.println(vetor.buscaBinaria(numeroProcurado) + "\n");
+            System.out.println("bubble demorou " + (fim-ini) + " milissegundos");
         }
     }
 }
+
+// long ini = Calendar.getInstance().getTimeInMillis();
+// long fim = Calendar.getInstance().getTimeInMillis();
+// System.out.println("bubble demorou " + (fim-ini) + " milissegundos");
+// ini = Calendar.getInstance().getTimeInMillis();
+// fim = Calendar.getInstance().getTimeInMillis();
+// System.out.println("selection ordenado demorou " + (fim-ini) + " milissegundos");
