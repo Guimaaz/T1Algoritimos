@@ -15,8 +15,8 @@ public class TesteVetor {
             vetor.adicionarpreencher();
             long ini = Calendar.getInstance().getTimeInMillis();
             System.out.println(vetor.buscaLinear(numeroProcurado)); 
-            System.out.println(vetor.selectionSort());
-            vetor.selectionSort();
+            System.out.println(vetor.bubbleSort());
+            vetor.bubbleSort();
             long fim = Calendar.getInstance().getTimeInMillis();
             System.out.println(vetor.buscaBinaria(numeroProcurado) + "\n");
             System.out.println("bubble demorou " + (fim-ini) + " milissegundos");
