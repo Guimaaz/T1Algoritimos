@@ -19,7 +19,7 @@ public class TesteVetor {
             vetor.selectionSort();
             long fim = Calendar.getInstance().getTimeInMillis();
             System.out.println(vetor.buscaBinaria(numeroProcurado) + "\n");
-            System.out.println("bubble demorou " + (fim-ini) + " milissegundos");
+            System.out.println("selection demorou " + (fim-ini) + " milissegundos");
         }
     }
 }
