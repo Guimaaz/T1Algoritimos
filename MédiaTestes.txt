@@ -1,22 +1,4 @@
 FEITO COM CHAT
-
--Teste 1.6M bubble
-    -Busca Linear: 1158832.82
-    -Ordenação Bubble: 639675344811.73
-    -Busca Binária: 40.09
-    -Milissegundos: 2.278.340 milissegundos
-
--Teste 1.6M Insertion
-    -Busca Linear: 888002.6
-    -Ordenação Insertion: 639838187623.4
-    -Busca Binária: 413
-    -Milissegundos: 92339.0 milissegundos
-
--Teste 1.6M Selection
-    -Busca Linear: 1149078.64
-    -Ordenação Selection: 833696554607.07
-    -Busca Binária: 38.64
-    -Milissegundos: 4837776.21 milissegundos
 _______________________________________
 -Teste 100k Bubble
     -Busca Linear: 53.051,3
@@ -88,5 +70,22 @@ _______________________________________
     -Busca Linear: 439.682,66
     -Ordenação Selection: 267.837.671.433,45
     -Busca Binária: 37,54
-    -Milissegundos: 1.125.713.461,83 milissegundos
+    -Milissegundos: 1090139,29 milissegundos
 ___________________________________
+-Teste 1.6M bubble
+    -Busca Linear: 1158832.82
+    -Ordenação Bubble: 639675344811.73
+    -Busca Binária: 40.09
+    -Milissegundos: 2.278.340 milissegundos
+
+-Teste 1.6M Insertion
+    -Busca Linear: 888002.6
+    -Ordenação Insertion: 639838187623.4
+    -Busca Binária: 413
+    -Milissegundos: 92339.0 milissegundos
+
+-Teste 1.6M Selection
+    -Busca Linear: 1149078.64
+    -Ordenação Selection: 833696554607.07
+    -Busca Binária: 38.64
+    -Milissegundos: 4837776.21 milissegundos
