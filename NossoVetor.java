@@ -22,7 +22,7 @@ public class NossoVetor {
     }
 
     public long bubbleSort() {
-        long contadorBS = 0;
+        long ContadorBubble = 0;
         for (int i = 1; i < this.vetor.length; i++) {
             for (int j = 0; j < this.vetor.length - i; j++) {
                 if (this.vetor[j] > this.vetor[j + 1]) {
@@ -30,15 +30,15 @@ public class NossoVetor {
                     this.vetor[j] = this.vetor[j + 1];
                     this.vetor[j + 1] = aux;
 
-                    contadorBS++;
+                    ContadorBubble++;
                 }
             }
         }
-        return contadorBS;
+        return ContadorBubble;
     }
 
     public long selectionSort() {
-        long contadorSS = 0;
+        long ContadorSelection = 0;
         for (int i = 0; i < this.vetor.length - 1; ++i) {
             int min = i;
             for (int j = i + 1; j < this.vetor.length; ++j) {
@@ -49,27 +49,27 @@ public class NossoVetor {
                 this.vetor[i] = this.vetor[min];
                 this.vetor[min] = x;
                 if (this.vetor[i] != this.vetor[min]) {
-                    contadorSS++;
+                    ContadorSelection++;
                 }
 
             }
         }
-        return contadorSS;
+        return ContadorSelection;
     }
 
     public long insertionSort() {
-        long contadorIS = 0;
+        long ContadorInsertion = 0;
         for (int j = 1; j < this.vetor.length; ++j) {
             int x = this.vetor[j];
             int i;
             for (i = j - 1; i >= 0 && this.vetor[i] > x; --i) {
                 this.vetor[i + 1] = this.vetor[i];
-                contadorIS++;
+                ContadorInsertion++;
             }
             this.vetor[i + 1] = x;
         }
 
-        return contadorIS;
+        return ContadorInsertion;
     }
 
     public int buscaLinear(int elemento) {
@@ -108,10 +108,17 @@ public class NossoVetor {
 
     @Override
     public String toString() {
-        String s = "tamanho = " + tamanho + "\n";
-        for (int i = 0; i < tamanho; i++) {
-            s += this.vetor[i] + " ";
-        }
-        return s + "\n";
+       StringBuilder s = new StringBuilder();
+
+       s.append("[");
+       for(int i = 0; i<this.tamanho; i++){
+        s.append(this.vetor[i]);
+        s.append(",");
+       }
+       s.append("]");
+
+       return s.toString();
+
+
     }
 }
