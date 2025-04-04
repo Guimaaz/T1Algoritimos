@@ -20,11 +20,11 @@ trocas_insertion = [2494263597, 9981213216, 39962365489, 159998333579, 639838187
 trocas_selection = [4177103026, 16664978248, 34037676118, 267837671433, 833696554607]
 
 plt.figure(figsize=(10, 6))
-plt.plot(tamanhos, comparacoes_bubble, label='Bubble Sort - Comparações', marker='v')
-plt.plot(tamanhos, comparacoes_insertion, label='Insertion Sort - Comparações', marker='o')
-plt.plot(tamanhos, comparacoes_selection, label='Selection Sort - Comparações', marker='s')
-plt.xlabel('Tamanho do Vetor')
-plt.ylabel('Número de Comparações')
+plt.plot(tamanhos, comparacoes_bubble, label='Bubble Sort - Comparações - Em Milhões', marker='v')
+plt.plot(tamanhos, comparacoes_insertion, label='Insertion Sort - Comparações - Em Milhões', marker='o')
+plt.plot(tamanhos, comparacoes_selection, label='Selection Sort - Comparações - Em Milhões', marker='s')
+plt.xlabel('Tamanho do Vetor (n em milhões)')
+plt.ylabel('Número de Comparações (em milhões)')
 plt.title('Comparações por Tamanho de Vetor')
 plt.legend()
 plt.grid(True)
