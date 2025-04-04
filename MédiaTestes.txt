@@ -1,0 +1,92 @@
+FEITO COM CHAT
+
+-Teste 1.6M bubble
+    -Busca Linear: 1158832.82
+    -Ordenação Bubble: 639675344811.73
+    -Busca Binária: 40.09
+    -Milissegundos: 2.278.340 milissegundos
+
+-Teste 1.6M Insertion
+    -Busca Linear: 888002.6
+    -Ordenação Insertion: 639838187623.4
+    -Busca Binária: 413
+    -Milissegundos: 92339.0 milissegundos
+
+-Teste 1.6M Selection
+    -Busca Linear: 1149078.64
+    -Ordenação Selection: 833696554607.07
+    -Busca Binária: 38.64
+    -Milissegundos: 4837776.21 milissegundos
+_______________________________________
+-Teste 100k Bubble
+    -Busca Linear: 53.051,3
+    -Ordenação Bubble: 2.495.807.907
+    -Busca Binária: 30,57
+    -Milissegundos: 21.740,9 milissegundos
+
+-Teste 100k Insertion
+    -Busca Linear: 51.059,5
+    -Ordenação Insertion: 2.494.263.597
+    -Busca Binária: 30,57
+    -Milissegundos: 1.747,8 milissegundos
+
+-Teste 100k Selection
+    -Busca Linear: 51.181
+    -Ordenação Selection: 4.177.103.026
+    -Busca Binária: 30,43
+    -Milissegundos: 28.937,8 milissegundos
+_______________________________________
+-Teste 200k Bubble
+    -Busca Linear: 152.418,6
+    -Ordenação Bubble: 9.977.179.174
+    -Busca Binária: 33,1
+    -Milissegundos: 62.248 milissegundos
+
+-Teste 200k Insertion
+    -Busca Linear: 159.985,5
+    -Ordenação Insertion: 9.981.213.216
+    -Busca Binária: 33,8
+    -Milissegundos: 7.243,2 milissegundos
+
+-Teste 200k Selection
+    -Busca Linear: 151.184,9
+    -Ordenação Selection: 16.664.978.248
+    -Busca Binária: 33,8
+    -Milissegundos: 79.737,97 milissegundos
+_______________________________________
+-Teste 400k Bubble
+    -Busca Linear: 212.466,7
+    -Ordenação Bubble: 39.958.274.263
+    -Busca Binária:33,7
+    -Milissegundos: 188.743,6 milissegundos
+
+-Teste 400k Insertion
+    -Busca Linear: 261.477,43
+    -Ordenação Insertion: 39.962.365.489
+    -Busca Binária: 33,7
+    -Milissegundos: 8.321,1 milissegundos
+
+-Teste 400k Selection
+    -Busca Linear: 288.378,17
+    -Ordenação Selection: 34.037.676.118
+    -Busca Binária: 35,17
+    -Milissegundos: 375.582,43  milissegundos 
+_______________________________________
+-Teste 800k Bubble
+    -Busca Linear: 499.394,67
+    -Ordenação Bubble: 159.983.915.658
+    -Busca Binária: 35,50
+    -Milissegundos:  571.782,23 milissegundos
+
+-Teste 800k Insertion
+    -Busca Linear: 498.570,5
+    -Ordenação Insertion: 159.998.333.579
+    -Busca Binária: 35,60
+    -Milissegundos: 22.692,53 milissegundos 
+
+-Teste 800k Selection
+    -Busca Linear: 439.682,66
+    -Ordenação Selection: 267.837.671.433,45
+    -Busca Binária: 37,54
+    -Milissegundos: 1.125.713.461,83 milissegundos
+___________________________________

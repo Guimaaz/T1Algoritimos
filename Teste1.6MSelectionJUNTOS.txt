@@ -1,0 +1,104 @@
+Teste número 1
+394923  //busca linear
+1068850235774  //ordenacao_selection
+42   //busca binaria
+
+selection demorou 5038443 milissegundos
+Teste número 2
+1600000
+1069311258330
+40
+
+selection demorou 4591660 milissegundos
+----
+Teste número 3
+913655
+1068357838918
+40
+
+selection demorou 5022023 milissegundos
+
+----
+Teste número 4
+77232
+640469389580
+37
+
+selection demorou 5037023 milissegundos
+
+Teste número 5
+1600000
+640454658034
+40
+
+selection demorou 4731642 milissegundos
+
+Teste número 6
+255682
+640431215514
+37
+
+selection demorou 4831264 milissegundos
+---
+Teste número 7
+1375573
+640323740578
+39
+
+selection demorou 4859728 milissegundos
+
+Teste número 8
+13656
+640296203155
+39
+
+selection demorou 4731689 milissegundos
+
+Teste número 9
+1600000
+639715142816
+42
+
+selection demorou 4917932 milissegundos
+
+---
+
+Teste número 10
+1600000
+639779780234
+42
+
+selection demorou 4881920 milissegundos
+
+Teste número 11
+1262096
+640228180148
+39
+
+selection demorou 4876261 milissegundos
+----
+
+Teste número 12
+1600000
+1068995095057
+40
+
+selection demorou 4863478 milissegundos
+
+Teste número 13
+748449
+1069026350608
+39
+
+selection demorou 4542498 milissegundos
+
+---
+(Referente ao teste 1.6M selection 2.txt)
+Teste número 14
+1038356
+1068875538282
+37
+
+selection demorou 4839908 milissegundos
+
+

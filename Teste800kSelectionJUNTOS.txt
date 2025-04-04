@@ -1,0 +1,221 @@
+Teste número 1
+800000  //busca linear
+267314107751  //ordenacao_selection
+38  //busca binaria
+
+selection demorou 1211716 milissegundos
+Teste número 2
+220916
+267224627479
+37
+
+selection demorou 1134282 milissegundos
+Teste número 3
+800000
+267396651506
+38
+
+selection demorou 1133439 milissegundos
+Teste número 4
+800000
+267127185718
+40
+
+selection demorou 1135394 milissegundos
+Teste número 5
+696329
+267348919553
+40
+
+selection demorou 1137571 milissegundos
+Teste número 6
+800000
+267237776772
+38
+
+selection demorou 1138840 milissegundos
+Teste número 7
+369317
+267399180256
+35
+
+selection demorou 1137353 milissegundos
+Teste número 8
+462294
+267114354249
+35
+
+selection demorou 1141016 milissegundos
+Teste número 9
+244503
+267269488043
+35
+
+selection demorou 1137285 milissegundos
+Teste número 10
+538548
+267067229024
+39
+
+selection demorou 1137451 milissegundos
+Teste número 11
+270770
+267338421197
+37
+
+selection demorou 1136435 milissegundos
+Teste número 12
+7532
+267318719099
+33
+
+selection demorou 1136148 milissegundos
+
+---
+
+Teste número 13
+749814
+267257412720
+37
+
+selection demorou 1815179 milissegundos
+
+---
+Teste número 14
+800000
+267300179792
+38
+
+selection demorou 1215345 milissegundos
+Teste número 15
+666922
+267276560652
+37
+
+selection demorou 1030513 milissegundos
+Teste número 16
+154590
+267119420681
+37
+
+selection demorou 1031204 milissegundos
+Teste número 17
+701824
+267242732897
+39
+
+selection demorou 1032891 milissegundos
+Teste número 18
+58839
+267295226659
+39
+
+selection demorou 1032391 milissegundos
+Teste número 19
+314968
+267193257973
+37
+
+selection demorou 1031393 milissegundos
+Teste número 20
+52193
+267247640922
+37
+
+selection demorou 1027927 milissegundos
+Teste número 21
+791818
+267178653667
+39
+
+selection demorou 1028865 milissegundos
+Teste número 22
+800000
+267202334205
+40
+
+selection demorou 1029960 milissegundos
+
+----
+
+Teste número 23
+800000
+267202562622
+38
+
+selection demorou 1226864 milissegundos
+Teste número 24
+297396
+267296968429
+37
+
+selection demorou 1136524 milissegundos
+Teste número 25
+59590
+267327093670
+35
+
+selection demorou 1140477 milissegundos
+Teste número 26
+791731
+267104806943
+39
+
+selection demorou 1142623 milissegundos
+Teste número 27
+347086
+267179601735
+35
+
+selection demorou 1139562 milissegundos
+Teste número 28
+634265
+267376552515
+38
+
+selection demorou 1134916 milissegundos
+Teste número 29
+800000
+267071010520
+38
+
+selection demorou 1135096 milissegundos
+Teste número 30
+800000
+267333120700
+40
+
+selection demorou 1138764 milissegundos
+---
+Teste número 31
+55676
+267343926308
+35
+
+selection demorou 1221523 milissegundos
+Teste número 32
+517892
+267351340776
+39
+
+selection demorou 1125670 milissegundos
+Teste número 33
+70945
+267191925891
+37
+
+selection demorou 1134627 milissegundos
+Teste número 34
+642735
+267280277604
+37
+
+selection demorou 1132094 milissegundos
+Teste número 35
+800000
+267303878276
+40
+
+selection demorou 1126730 milissegundos
+
+

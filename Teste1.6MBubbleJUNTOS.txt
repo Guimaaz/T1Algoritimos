@@ -1,0 +1,70 @@
+Teste número 1
+620224 //busca linear
+639773377457 //ordenacao _bubble
+41  //busca binaria
+
+bubble demorou 3368589 milissegundos
+Teste número 2
+1600000
+640250908520
+42
+
+bubble demorou 2268890 milissegundos
+Teste número 3
+1600000
+640412194620
+42
+
+bubble demorou 2273817 milissegundos
+Teste número 4
+603301
+639464393122
+37
+
+bubble demorou 2266979 milissegundos
+-----
+Teste número 5
+620224
+639773377457
+41
+
+bubble demorou 3368589 milissegundos
+Teste número 6
+1600000
+640250908520
+42
+
+bubble demorou 2268890 milissegundos
+Teste número 7
+1600000
+640412194620
+42
+
+bubble demorou 2273817 milissegundos
+Teste número 8
+603301
+639464393122
+37
+
+bubble demorou 2266979 milissegundos
+----
+Teste número 9
+435365
+639477293799
+37
+
+bubble demorou 3360353 milissegundos
+Teste número 10
+1600000
+639891494539
+42
+
+bubble demorou 2270419 milissegundos
+Teste número 11
+596736
+639657990705
+37
+
+bubble demorou 2271234 milissegundos
+
+

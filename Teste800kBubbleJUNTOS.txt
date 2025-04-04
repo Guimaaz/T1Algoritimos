@@ -1,0 +1,181 @@
+Teste número 1
+791692  //busca linear
+160089633303 //ordenacao _bubble
+39  //busca binaria
+
+bubble demorou 844073 milissegundos
+Teste número 2
+386366
+160061708263
+37
+
+bubble demorou 567741 milissegundos
+Teste número 3
+683094
+159918651522
+37
+
+bubble demorou 567846 milissegundos
+Teste número 4
+280843
+159961365891
+37
+
+bubble demorou 566924 milissegundos
+Teste número 5
+435401
+159900359946
+35
+
+bubble demorou 566432 milissegundos
+Teste número 6
+800000
+159967397471
+38
+
+bubble demorou 569785 milissegundos
+Teste número 7
+800000
+160046518208
+38
+
+bubble demorou 569284 milissegundos
+Teste número 8
+800000
+160061430994
+40
+
+bubble demorou 569047 milissegundos
+Teste número 9
+800000
+159949477392
+38
+
+bubble demorou 569033 milissegundos
+Teste número 10
+662470
+160105653596
+37
+
+bubble demorou 571184 milissegundos
+Teste número 11
+380308
+159975912870
+39
+
+bubble demorou 575383 milissegundos
+Teste número 12
+281605
+160162207299
+37
+
+bubble demorou 575040 milissegundos
+Teste número 13
+800000
+159972962967
+40
+
+bubble demorou 575263 milissegundos
+Teste número 14
+800000
+159716809676
+40
+
+bubble demorou 575951 milissegundos
+Teste número 15
+477783
+160004125019
+37
+
+bubble demorou 576825 milissegundos
+Teste número 16
+446008
+160048514363
+37
+
+bubble demorou 575985 milissegundos
+Teste número 17
+505506
+160135749926
+39
+
+bubble demorou 574675 milissegundos
+Teste número 18
+800000
+159975467910
+38
+
+bubble demorou 576153 milissegundos
+Teste número 19
+727364
+159920433730
+35
+
+bubble demorou 575127 milissegundos
+Teste número 20
+404723
+159907320329
+37
+
+bubble demorou 575882 milissegundos
+Teste número 21
+800000
+160176624131
+38
+
+bubble demorou 576220 milissegundos
+Teste número 22
+10733
+160026699585
+37
+
+bubble demorou 572276 milissegundos
+Teste número 23
+333308
+159857446750
+37
+
+bubble demorou 569952 milissegundos
+Teste número 24
+800000
+160205825579
+38
+
+bubble demorou 569063 milissegundos
+Teste número 25
+119818
+160137412903
+35
+
+bubble demorou 569845 milissegundos
+---
+Teste número 26
+63987
+160036530953
+37
+
+bubble demorou 1128709 milissegundos
+Teste número 27
+113019
+160036417953
+33
+
+bubble demorou 773903 milissegundos
+Teste número 28
+313886
+159974797925
+35
+
+bubble demorou 778816 milissegundos
+Teste número 29
+744389
+160209436893
+39
+
+bubble demorou 749615 milissegundos
+Teste número 30
+341421
+159983758917
+37
+
+bubble demorou 769222 milissegundos
