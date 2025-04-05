@@ -18,7 +18,6 @@ selection_binaria = [30.73, 33.56, 36.13, 37.49, 39.29]
 selection_ordenacao = [4176966666.0, 16701659286.07, 51909835329.8, 267245780829.37, 884786720455.71]
 selection_tempo = [29.43117, 184809.53, 300566.80, 1144080.3, 4826897.64]
 
-# Gráficos
 plt.figure(figsize=(10, 6))
 plt.plot(tamanhos, bubble_linear, marker='o', label='Bubble')
 plt.plot(tamanhos, selection_linear, marker='o', label='Selection')
