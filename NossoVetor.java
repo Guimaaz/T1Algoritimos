@@ -9,9 +9,6 @@ public class NossoVetor {
         this.vetor = new int[capacidade];
         this.tamanho = 0;
     }
-
-    
-
     public void adicionarpreencher() {
         Random random = new Random();
         for (int i = 0; i < this.vetor.length; i++) {
@@ -20,7 +17,6 @@ public class NossoVetor {
         }
         this.tamanho = this.vetor.length;
     }
-
     public long bubbleSort() {
         long ContadorBubble = 0;
         for (int i = 1; i < this.vetor.length; i++) {
@@ -36,7 +32,6 @@ public class NossoVetor {
         }
         return ContadorBubble;
     }
-
     public long selectionSort() {
         long ContadorSelection = 0;
         for (int i = 0; i < this.vetor.length - 1; ++i) {
@@ -56,7 +51,6 @@ public class NossoVetor {
         }
         return ContadorSelection;
     }
-
     public long insertionSort() {
         long ContadorInsertion = 0;
         for (int j = 1; j < this.vetor.length; ++j) {
@@ -71,14 +65,13 @@ public class NossoVetor {
 
         return ContadorInsertion;
     }
-
     public int buscaLinear(int elemento) {
         int contadorLinear = 0;
 
         for (int i = 0; i < this.vetor.length; i++) {
             contadorLinear++;
             if (this.vetor[i] == elemento) {
-                // System.out.println(i);
+                
                 return contadorLinear;
             }
         }
