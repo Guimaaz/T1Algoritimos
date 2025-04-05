@@ -1,91 +1,123 @@
-FEITO COM CHAT
-_______________________________________
--Teste 100k Bubble
-    -Busca Linear: 53.051,3
-    -Ordenação Bubble: 2.495.807.907
-    -Busca Binária: 30,57
-    -Milissegundos: 21.740,9 milissegundos
+1.6 bubble
 
--Teste 100k Insertion
-    -Busca Linear: 51.059,5
-    -Ordenação Insertion: 2.494.263.597
-    -Busca Binária: 30,57
-    -Milissegundos: 1.747,8 milissegundos
+Média de Busca Linear: 1,105,468.36
+Média de Ordenação Bubble: 639,884,594,688.27
+Média de Busca Binária: 39.09
+Média de Tempo Bubble em milissegundos: 2,596,959.64
 
--Teste 100k Selection
-    -Busca Linear: 51.181
-    -Ordenação Selection: 4.177.103.026
-    -Busca Binária: 30,43
-    -Milissegundos: 28.937,8 milissegundos
-_______________________________________
--Teste 200k Bubble
-    -Busca Linear: 152.418,6
-    -Ordenação Bubble: 9.977.179.174
-    -Busca Binária: 33,1
-    -Milissegundos: 62.248 milissegundos
+1.6 selection
 
--Teste 200k Insertion
-    -Busca Linear: 159.985,5
-    -Ordenação Insertion: 9.981.213.216
-    -Busca Binária: 33,8
-    -Milissegundos: 7.243,2 milissegundos
 
--Teste 200k Selection
-    -Busca Linear: 151.184,9
-    -Ordenação Selection: 16.664.978.248
-    -Busca Binária: 33,8
-    -Milissegundos: 79.737,97 milissegundos
-_______________________________________
--Teste 400k Bubble
-    -Busca Linear: 212.466,7
-    -Ordenação Bubble: 39.958.274.263
-    -Busca Binária:33,7
-    -Milissegundos: 188.743,6 milissegundos
+Média de Busca Linear: 1,005,698.36
+Média de Ordenação Selection: 884,786,720,455.71
+Média de Busca Binária: 39.29
+Média de Tempo Selection em milissegundos: 4,826,897.64
 
--Teste 400k Insertion
-    -Busca Linear: 261.477,43
-    -Ordenação Insertion: 39.962.365.489
-    -Busca Binária: 33,7
-    -Milissegundos: 8.321,1 milissegundos
+1.6 insertion
 
--Teste 400k Selection
-    -Busca Linear: 288.378,17
-    -Ordenação Selection: 34.037.676.118
-    -Busca Binária: 35,17
-    -Milissegundos: 375.582,43  milissegundos 
-_______________________________________
--Teste 800k Bubble
-    -Busca Linear: 499.394,67
-    -Ordenação Bubble: 159.983.915.658
-    -Busca Binária: 35,50
-    -Milissegundos:  571.782,23 milissegundos
+Média de Busca Linear: 722,492.6
+Média de Ordenação Insertion: 639,727,967,411.9
+Média de Busca Binária: 39.3
+Média de Tempo Insertion em milissegundos: 93,039
 
--Teste 800k Insertion
-    -Busca Linear: 498.570,5
-    -Ordenação Insertion: 159.998.333.579
-    -Busca Binária: 35,60
-    -Milissegundos: 22.692,53 milissegundos 
 
--Teste 800k Selection
-    -Busca Linear: 439.682,66
-    -Ordenação Selection: 267.837.671.433,45
-    -Busca Binária: 37,54
-    -Milissegundos: 1090139,29 milissegundos
-___________________________________
--Teste 1.6M bubble
-    -Busca Linear: 1158832.82
-    -Ordenação Bubble: 639675344811.73
-    -Busca Binária: 40.09
-    -Milissegundos: 2.278.340 milissegundos
+800k selection
 
--Teste 1.6M Insertion
-    -Busca Linear: 888002.6
-    -Ordenação Insertion: 639838187623.4
-    -Busca Binária: 413
-    -Milissegundos: 92339.0 milissegundos
+Média de Busca Linear: 527,582.4
+Média de Ordenação Selection: 267,245,780,829.37
+Média de Busca Binária: 37.49
+Média de Tempo Selection em milissegundos: 1,144,080.3
 
--Teste 1.6M Selection
-    -Busca Linear: 1149078.64
-    -Ordenação Selection: 833696554607.07
-    -Busca Binária: 38.64
-    -Milissegundos: 4837776.21 milissegundos
+800k insertion
+
+Média de Busca Linear: 627,789.23
+Média de Ordenação Insertion: 160,007,994,685.1
+Média de Busca Binária: 38.03
+Média de Tempo Insertion em milissegundos: 23,892.43
+
+800k bubble
+
+Média de Busca Linear: 557,750.67
+Média de Ordenação Bubble: 160,004,187,411.37
+Média de Busca Binária: 37.33
+Média de Tempo Bubble em milissegundos: 622,968.9
+
+
+400k bubble
+
+Média de Busca Linear: 246,756.23
+Média de Ordenação Bubble: 40,005,620,838.2
+Média de Busca Binária: 35.06
+Média de Tempo Bubble em milissegundos: 190,563.83
+
+400k selection
+
+Média de Busca Linear: 312,279.13
+Média de Ordenação Selection: 51,909,835,329.8
+Média de Busca Binária: 36.13
+Média de Tempo Selection em milissegundos: 300,566.80
+
+400k insertion
+
+Média de Busca Linear: 239,977.37
+Média de Ordenação Insertion: 40,005,620,838.2
+Média de Busca Binária: 35.40
+Média de Tempo Insertion em milissegundos: 8,430.20
+
+200k selection
+
+Média de Busca Linear: 132,152.06
+Média de Busca Binária: 33.56
+Média de Ordenação (Selection): 16,701,659,286.07
+Média de Tempo de Ordenação (Selection) em Milissegundos: 184,809.53
+
+200k insertion
+
+Média de Busca Linear: 145,206.67
+Média de Ordenação Insertion: 9,999,999,999.0
+Média de Busca Binária: 33.73
+Média de Tempo Insertion em milissegundos: 7,137.97
+
+200k bubble
+
+
+Média de Busca Linear: 132,152.07
+Média de Ordenação Bubble: 9,994,220,296.27
+Média de Busca Binária: 33.67
+Média de Tempo Bubble em milissegundos: 66,220.73
+
+
+100k bubble 
+
+Média de Busca Linear: 62,560.33
+Média de Ordenação Bubble: 2,498,900,000.0
+Média de Busca Binária: 31.40
+Média de Tempo Bubble em milissegundos: 20,296.73
+
+100k insertion
+
+Média de Busca Linear: 70,878.03
+Média de Ordenação Insertion: 2,498,900,000.0
+Média de Busca Binária: 32.27
+Média de Tempo Insertion em milissegundos: 1,801.33
+
+100k selection
+
+Média de Busca Linear: 54,954.90
+Média de Ordenação Selection: 4,176,966,666.0
+Média de Busca Binária: 30.73
+Média de Tempo Selection em milissegundos: 29,431.17
+
+
+
+
+
+
+
+
+
+
+
+
+
+
